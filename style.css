@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container {
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    height: 10%;
+    font-size: 48px;
+}
+
+.result span {
+    margin-right: 20px;
+}
+
+.buttons {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: white;
+    background-color: #343434;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+}
+
+.percent, .clear {
+    background-color: #A5A5A5;
+    color: black;
+}
+
+.item3 {
+    background-color: #ff9f0a;
+}
+
+.negative {
+    color: black;
+}
+
+.itemZero {
+    background-color: #343434;
+    width: 100%;
+    grid-column: span 2;
+}
+
+.item:hover {
+    background-color: #222;
+}
+
+.comma {
+    background-color: #343434;
+    font-size: 36px;
+}
+
+.equals {
+    background-color: #ff9f0a;
+    color: black;
+    font-size: 36px;
+}
+
+/* Adjust the size of the equals button */
+.equals {
+    grid-column: span 4;
+}
